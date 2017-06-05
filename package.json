@@ -3,7 +3,7 @@
   "scripts": {
     "cypress-install": "cypress install",
     "start": "http-server -p 8888 -c-1",
-    "test": "npm run start & cypress run headless"
+    "test": "npm run start & cypress run"
   },
   "dependencies": {
     "cypress": "^0.10.1",
