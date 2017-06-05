@@ -9,5 +9,5 @@ addons:
 build:
   ci:
     - shippable_retry npm install
-    - shippable_retry node node_modules/cypress-cli/bin/cypress install
+    - shippable_retry npm run cypress-install
     - npm test

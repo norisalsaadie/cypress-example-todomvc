@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
+    "cypress-install": "cypress install",
     "start": "http-server -p 8888 -c-1",
-    "test": "npm run start & cypress run"
+    "test": "npm run start & cypress run headless"
   },
   "dependencies": {
     "cypress": "^0.10.1",
