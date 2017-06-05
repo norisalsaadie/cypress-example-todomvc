@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - 7.4.0
+
+addons:
+    firefox: "52.0"
+
+build:
+  ci:
+    - shippable_retry npm install
+    - shippable_retry node node_modules/cypress-cli/bin/cypress install
+    - npm test
